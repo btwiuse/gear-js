@@ -26,7 +26,6 @@
         "idea/api-gateway/**",
         "idea/common/**",
         "idea/data-storage/**",
-        "idea/events-listener/**",
         "idea/test-balance/**",
         "idea/wasm-compiler/**"
       ],
