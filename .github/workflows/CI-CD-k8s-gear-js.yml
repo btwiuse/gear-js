@@ -217,6 +217,7 @@ jobs:
             REACT_APP_WASM_COMPILER_URL=${{ secrets.REACT_APP_WASM_COMPILER_URL }}
             REACT_APP_DEFAULT_NODES_URL=${{ secrets.REACT_APP_DEFAULT_NODES_URL }}
             REACT_APP_HCAPTCHA_SITE_KEY=${{ secrets.REACT_APP_HCAPTCHA_SITE_KEY }}
+            REACT_APP_DEFAULT_TRANSFER_BALANCE_VALUE=${{ secrets.REACT_APP_DEFAULT_TRANSFER_BALANCE_VALUE }}
 
   build-data-storage-image-prod:
     runs-on: ubuntu-latest
@@ -318,7 +319,7 @@ jobs:
       - name: Deploy to k8s
         uses: sergeyfilyanin/kubectl-aws-eks@master
         with:
-          args: rollout restart deployment api-gateway data-storage-vara data-storage-rpc frontend-nginx test-balance-testnet-node -n prod-idea
+          args: rollout restart deployment api-gateway data-storage-vara data-storage-rpc data-storage-workshop test-balance-workshop-node frontend-nginx test-balance-testnet-node -n prod-idea
 
       - name: Check k8s deployments
         uses: sergeyfilyanin/kubectl-aws-eks@master
