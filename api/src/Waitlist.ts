@@ -1,7 +1,7 @@
-import { Option } from '@polkadot/types';
+import { Option } from 'https://deno.land/x/polkadot@0.2.11/types/mod.ts';
 
-import { Hex, WaitlistItem } from './types';
-import { GearApi } from './GearApi';
+import { Hex, WaitlistItem } from './types/index.ts';
+import { GearApi } from './GearApi.ts';
 
 export class GearWaitlist {
   constructor(private _api: GearApi) {}

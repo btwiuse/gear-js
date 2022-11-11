@@ -1,6 +1,6 @@
-import { Tuple } from '@polkadot/types';
-import { BlockNumber } from '@polkadot/types/interfaces';
-import { Interval, StoredMessage } from './base';
+import { Tuple } from 'https://deno.land/x/polkadot@0.2.11/types/mod.ts';
+import { BlockNumber } from 'https://deno.land/x/polkadot@0.2.11/types/interfaces/index.ts';
+import { Interval, StoredMessage } from './base.ts';
 
 export interface MailboxItem extends Tuple {
   0: StoredMessage,

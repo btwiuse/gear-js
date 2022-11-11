@@ -1,10 +1,10 @@
-import { Codec, AnyJson } from '@polkadot/types/types';
+import { Codec, AnyJson } from 'https://deno.land/x/polkadot@0.2.11/types/types/index.ts';
 
-import { getWasmMetadata, readState } from './wasm';
-import { ReadStateError } from './errors';
-import { Metadata, Hex } from './types';
-import { GearStorage } from './Storage';
-import { CreateType } from './create-type';
+import { getWasmMetadata, readState } from './wasm/index.ts';
+import { ReadStateError } from './errors/index.ts';
+import { Metadata, Hex } from './types/index.ts';
+import { GearStorage } from './Storage.ts';
+import { CreateType } from './create-type/index.ts';
 
 export class GearProgramState extends GearStorage {
   /**

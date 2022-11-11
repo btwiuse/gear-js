@@ -1,9 +1,9 @@
-import { AnyJson } from '@polkadot/types/types';
+import { AnyJson } from 'https://deno.land/x/polkadot@0.2.11/types/types/index.ts';
 
-import { isJSON, splitByCommas, toJSON } from '../utils';
-import { enumTypes, TypeTree } from './interfaces';
-import { REGULAR_EXP } from '../utils/regexp';
-import generate from './generate';
+import { isJSON, splitByCommas, toJSON } from '../utils/index.ts';
+import { enumTypes, TypeTree } from './interfaces.ts';
+import { REGULAR_EXP } from '../utils/regexp.ts';
+import generate from './generate.ts';
 
 function getIfTuple(typeName: string, types: AnyJson, raw: boolean): TypeTree | TypeTree[] | null {
   if (typeName.includes(':')) return null;

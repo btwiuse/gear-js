@@ -1,9 +1,9 @@
-import { UnsubscribePromise } from '@polkadot/api/types';
+import { UnsubscribePromise } from 'https://deno.land/x/polkadot@0.2.11/api/types/index.ts';
 
-import { ISystemAccountInfo, IBalanceCallback, IBlocksCallback, Hex } from '../types';
-import { IGearEvent } from './types';
-import { GearApi } from '../GearApi';
-import { Transfer, UserMessageSent } from './GearEvents';
+import { ISystemAccountInfo, IBalanceCallback, IBlocksCallback, Hex } from '../types/index.ts';
+import { IGearEvent } from './types.ts';
+import { GearApi } from '../GearApi.ts';
+import { Transfer, UserMessageSent } from './GearEvents.ts';
 
 export class GearEvents {
   private api: GearApi;

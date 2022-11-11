@@ -1,4 +1,4 @@
-import { signatureVerify } from '@polkadot/util-crypto';
+import { signatureVerify } from 'https://deno.land/x/polkadot@0.2.11/util-crypto/mod.ts';
 
 export function signatureIsValid(publicKey: string, signature: string, message: string) {
   return signatureVerify(message, signature, publicKey).isValid;

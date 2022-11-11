@@ -1,8 +1,8 @@
-import { Codec } from '@polkadot/types-codec/types';
-import { H256 } from '@polkadot/types/interfaces';
-import { u8, u32, Option, BTreeSet, Vec } from '@polkadot/types';
-import { WasmPageNumber } from './pages';
-import { DispatchKind } from '../message';
+import { Codec } from 'https://deno.land/x/polkadot@0.2.11/types-codec/types/index.ts';
+import { H256 } from 'https://deno.land/x/polkadot@0.2.11/types/interfaces/index.ts';
+import { u8, u32, Option, BTreeSet, Vec } from 'https://deno.land/x/polkadot@0.2.11/types/mod.ts';
+import { WasmPageNumber } from './pages.ts';
+import { DispatchKind } from '../message/index.ts';
 
 export interface CodeMetadata extends Codec {
   author: H256;

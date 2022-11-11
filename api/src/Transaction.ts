@@ -1,11 +1,11 @@
-import { AddressOrPair, SignerOptions, SubmittableExtrinsic } from '@polkadot/api/types';
-import { Hash, RuntimeDispatchInfo } from '@polkadot/types/interfaces';
-import { ISubmittableResult } from '@polkadot/types/types';
-import { isFunction } from '@polkadot/util';
+import { AddressOrPair, SignerOptions, SubmittableExtrinsic } from 'https://deno.land/x/polkadot@0.2.11/api/types/index.ts';
+import { Hash, RuntimeDispatchInfo } from 'https://deno.land/x/polkadot@0.2.11/types/interfaces/index.ts';
+import { ISubmittableResult } from 'https://deno.land/x/polkadot@0.2.11/types/types/index.ts';
+import { isFunction } from 'https://deno.land/x/polkadot@0.2.11/util/mod.ts';
 
-import { TransactionStatusCb } from './types';
-import { TransactionError } from './errors';
-import { GearApi } from './GearApi';
+import { TransactionStatusCb } from './types/index.ts';
+import { TransactionError } from './errors/index.ts';
+import { GearApi } from './GearApi.ts';
 
 export class GearTransaction {
   extrinsic: SubmittableExtrinsic<'promise', ISubmittableResult>;

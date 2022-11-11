@@ -1,4 +1,4 @@
-import { REGULAR_EXP } from './regexp';
+import { REGULAR_EXP } from './regexp.ts';
 
 export function transformTypes(types: object): { [key: string]: object } {
   return Object.values(types).reduce((res, types): object => ({ ...res, ...types }), {});

@@ -1,8 +1,8 @@
-import { SubmittableExtrinsic, UnsubscribePromise } from '@polkadot/api/types';
-import { ISubmittableResult } from '@polkadot/types/types';
+import { SubmittableExtrinsic, UnsubscribePromise } from 'https://deno.land/x/polkadot@0.2.11/api/types/index.ts';
+import { ISubmittableResult } from 'https://deno.land/x/polkadot@0.2.11/types/types/index.ts';
 
-import { GearTransaction } from './Transaction';
-import { DebugDataSnapshot } from './events';
+import { GearTransaction } from './Transaction.ts';
+import { DebugDataSnapshot } from './events/index.ts';
 
 export class DebugMode extends GearTransaction {
   enabled: SubmittableExtrinsic<'promise', ISubmittableResult>;

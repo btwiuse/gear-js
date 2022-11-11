@@ -1,9 +1,9 @@
-import { AccountId32 } from '@polkadot/types/interfaces';
-import { Option } from '@polkadot/types';
+import { AccountId32 } from 'https://deno.land/x/polkadot@0.2.11/types/interfaces/index.ts';
+import { Option } from 'https://deno.land/x/polkadot@0.2.11/types/mod.ts';
 
-import { Hex, MailboxItem } from './types';
-import { GearClaimValue } from './Claim';
-import { GearApi } from './GearApi';
+import { Hex, MailboxItem } from './types/index.ts';
+import { GearClaimValue } from './Claim.ts';
+import { GearApi } from './GearApi.ts';
 
 export class GearMailbox {
   public claimValue: GearClaimValue;

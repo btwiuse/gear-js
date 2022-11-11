@@ -1,9 +1,9 @@
-import { SubmittableExtrinsic } from '@polkadot/api/types';
-import { ISubmittableResult } from '@polkadot/types/types';
+import { SubmittableExtrinsic } from 'https://deno.land/x/polkadot@0.2.11/api/types/index.ts';
+import { ISubmittableResult } from 'https://deno.land/x/polkadot@0.2.11/types/types/index.ts';
 
-import { GearTransaction } from './Transaction';
-import { ClaimValueError } from './errors';
-import { Hex } from './types';
+import { GearTransaction } from './Transaction.ts';
+import { ClaimValueError } from './errors/index.ts';
+import { Hex } from './types/index.ts';
 
 /**
  * Claim value from mailbox

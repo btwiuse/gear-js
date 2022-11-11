@@ -1,22 +1,22 @@
-import { SpRuntimeDispatchError } from '@polkadot/types/lookup';
-import { RegistryError } from '@polkadot/types-codec/types';
-import { ApiPromise, WsProvider } from '@polkadot/api';
-import { Event } from '@polkadot/types/interfaces';
-import { u128, u64 } from '@polkadot/types';
+import { SpRuntimeDispatchError } from 'https://deno.land/x/polkadot@0.2.11/types/lookup.ts';
+import { RegistryError } from 'https://deno.land/x/polkadot@0.2.11/types-codec/types/index.ts';
+import { ApiPromise, WsProvider } from 'https://deno.land/x/polkadot@0.2.11/api/mod.ts';
+import { Event } from 'https://deno.land/x/polkadot@0.2.11/types/interfaces/index.ts';
+import { u128, u64 } from 'https://deno.land/x/polkadot@0.2.11/types/mod.ts';
 
-import { gearRpc, gearTypes } from './default';
-import { GearProgramState } from './State';
-import { GearWaitlist } from './Waitlist';
-import { GearClaimValue } from './Claim';
-import { GearApiOptions } from './types';
-import { GearProgram } from './Program';
-import { GearStorage } from './Storage';
-import { GearMailbox } from './Mailbox';
-import { GearMessage } from './Message';
-import { GearBalance } from './Balance';
-import { GearEvents } from './events';
-import { GearBlock } from './Blocks';
-import { GearCode } from './Code';
+import { gearRpc, gearTypes } from './default/index.ts';
+import { GearProgramState } from './State.ts';
+import { GearWaitlist } from './Waitlist.ts';
+import { GearClaimValue } from './Claim.ts';
+import { GearApiOptions } from './types/index.ts';
+import { GearProgram } from './Program.ts';
+import { GearStorage } from './Storage.ts';
+import { GearMailbox } from './Mailbox.ts';
+import { GearMessage } from './Message.ts';
+import { GearBalance } from './Balance.ts';
+import { GearEvents } from './events/index.ts';
+import { GearBlock } from './Blocks.ts';
+import { GearCode } from './Code.ts';
 
 export class GearApi extends ApiPromise {
   public program: GearProgram;

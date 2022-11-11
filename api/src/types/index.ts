@@ -1,3 +1,3 @@
-export * from './common';
-export * from './payload';
-export * from './interfaces';
+export * from './common.ts';
+export * from './payload.ts';
+export * from './interfaces/index.ts';

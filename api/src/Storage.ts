@@ -1,10 +1,10 @@
-import { Option, Raw } from '@polkadot/types';
-import { Codec } from '@polkadot/types/types';
+import { Option, Raw } from 'https://deno.land/x/polkadot@0.2.11/types/mod.ts';
+import { Codec } from 'https://deno.land/x/polkadot@0.2.11/types/types/index.ts';
 
-import { ActiveProgram, IGearPages, IProgram, Hex } from './types';
-import { GPAGES_HEX, GPROG_HEX, SEPARATOR } from './utils';
-import { ProgramExitedError, ProgramTerminatedError, ReadStorageError } from './errors';
-import { GearApi } from './GearApi';
+import { ActiveProgram, IGearPages, IProgram, Hex } from './types/index.ts';
+import { GPAGES_HEX, GPROG_HEX, SEPARATOR } from './utils/index.ts';
+import { ProgramExitedError, ProgramTerminatedError, ReadStorageError } from './errors/index.ts';
+import { GearApi } from './GearApi.ts';
 
 export class GearStorage {
   constructor(protected _api: GearApi) {}

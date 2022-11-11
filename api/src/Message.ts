@@ -1,11 +1,11 @@
-import { ISubmittableResult } from '@polkadot/types/types';
-import { SubmittableExtrinsic } from '@polkadot/api/types';
+import { ISubmittableResult } from 'https://deno.land/x/polkadot@0.2.11/types/types/index.ts';
+import { SubmittableExtrinsic } from 'https://deno.land/x/polkadot@0.2.11/api/types/index.ts';
 
-import { IMessageSendOptions, IMessageSendReplyOptions, Metadata } from './types';
-import { SendMessageError, SendReplyError } from './errors';
-import { validateGasLimit, validateValue } from './utils';
-import { GearTransaction } from './Transaction';
-import { createPayload } from './create-type';
+import { IMessageSendOptions, IMessageSendReplyOptions, Metadata } from './types/index.ts';
+import { SendMessageError, SendReplyError } from './errors/index.ts';
+import { validateGasLimit, validateValue } from './utils/validate.ts';
+import { GearTransaction } from './Transaction.ts';
+import { createPayload } from './create-type/index.ts';
 
 export class GearMessage extends GearTransaction {
   /**

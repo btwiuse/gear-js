@@ -1,3 +1,3 @@
-export * from './code';
-export * from './program';
-export * from './message';
+export * from './code.ts';
+export * from './program.ts';
+export * from './message.ts';

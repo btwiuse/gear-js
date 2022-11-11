@@ -1,5 +1,5 @@
-import { Enum, Null } from '@polkadot/types';
-import { Reason } from './common';
+import { Enum, Null } from 'https://deno.land/x/polkadot@0.2.11/types/mod.ts';
+import { Reason } from './common.ts';
 
 export interface MessageWokenRuntimeReason extends Enum {
   isWakeCalled: boolean;

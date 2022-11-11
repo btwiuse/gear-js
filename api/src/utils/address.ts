@@ -1,7 +1,7 @@
-import { u8aToHex } from '@polkadot/util';
-import { Keyring } from '@polkadot/api';
+import { u8aToHex } from 'https://deno.land/x/polkadot@0.2.11/util/mod.ts';
+import { Keyring } from 'https://deno.land/x/polkadot@0.2.11/api/mod.ts';
 
-import { Hex } from '../types';
+import { Hex } from '../types/index.ts';
 
 export function decodeAddress(publicKey: string): Hex {
   return u8aToHex(new Keyring().decodeAddress(publicKey));

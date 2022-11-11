@@ -1,15 +1,15 @@
-import { randomAsHex } from '@polkadot/util-crypto';
-import { u8aToHex } from '@polkadot/util';
-import { Bytes } from '@polkadot/types';
+import { randomAsHex } from 'https://deno.land/x/polkadot@0.2.11/util-crypto/mod.ts';
+import { u8aToHex } from 'https://deno.land/x/polkadot@0.2.11/util/mod.ts';
+import { Bytes } from 'https://deno.land/x/polkadot@0.2.11/types/mod.ts';
 
-import { IProgramCreateOptions, IProgramCreateResult, IProgramUploadOptions, IProgramUploadResult, Hex } from './types';
-import { generateCodeHash, generateProgramId, GPROG, GPROG_HEX, validateGasLimit, validateValue } from './utils';
-import { GearTransaction } from './Transaction';
-import { createPayload } from './create-type';
-import { Metadata } from './types/interfaces';
-import { SubmitProgramError } from './errors';
-import { GearApi } from './GearApi';
-import { GearGas } from './Gas';
+import { IProgramCreateOptions, IProgramCreateResult, IProgramUploadOptions, IProgramUploadResult, Hex } from './types/index.ts';
+import { generateCodeHash, generateProgramId, GPROG, GPROG_HEX, validateGasLimit, validateValue } from './utils/index.ts';
+import { GearTransaction } from './Transaction.ts';
+import { createPayload } from './create-type/index.ts';
+import { Metadata } from './types/interfaces/index.ts';
+import { SubmitProgramError } from './errors/index.ts';
+import { GearApi } from './GearApi.ts';
+import { GearGas } from './Gas.ts';
 
 export class GearProgram extends GearTransaction {
   public calculateGas: GearGas;

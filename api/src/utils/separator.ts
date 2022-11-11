@@ -1,1 +1,2 @@
-export const SEPARATOR = Buffer.from('::').toString('hex');
+const encoder = new TextEncoder();
+export const SEPARATOR = encoder.encode('::').toString('hex');

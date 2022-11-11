@@ -1,3 +1,3 @@
-export * from './importObj';
-export * from './WasmMeta';
-export * from './readState';
+export * from './importObj.ts';
+export * from './WasmMeta.ts';
+export * from './readState.ts';

@@ -1,5 +1,5 @@
-import { u64 } from '@polkadot/types';
-import { BlockNumber } from '@polkadot/types/interfaces';
+import { u64 } from 'https://deno.land/x/polkadot@0.2.11/types/mod.ts';
+import { BlockNumber } from 'https://deno.land/x/polkadot@0.2.11/types/interfaces/index.ts';
 
 export default (
   memory: WebAssembly.Memory,

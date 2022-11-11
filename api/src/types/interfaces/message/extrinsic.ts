@@ -1,7 +1,7 @@
-import { H256 } from '@polkadot/types/interfaces';
+import { H256 } from 'https://deno.land/x/polkadot@0.2.11/types/interfaces/index.ts';
 
-import { GasLimit, Hex, Value } from '../../common';
-import { PayloadType } from '../../payload';
+import { GasLimit, Hex, Value } from '../../common.ts';
+import { PayloadType } from '../../payload.ts';
 
 export interface IMessageSendOptions {
   destination: Hex | H256;

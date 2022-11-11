@@ -1,8 +1,8 @@
-import { blake2AsHex, blake2AsU8a } from '@polkadot/util-crypto';
-import { u8aToU8a } from '@polkadot/util';
+import { blake2AsHex, blake2AsU8a } from 'https://deno.land/x/polkadot@0.2.11/util-crypto/mod.ts';
+import { u8aToU8a } from 'https://deno.land/x/polkadot@0.2.11/util/mod.ts';
 
-import { Hex } from '../types';
-import { CreateType } from '../create-type/CreateType';
+import { Hex } from '../types/index.ts';
+import { CreateType } from '../create-type/CreateType.ts';
 
 export function generateCodeHash(code: Buffer | Uint8Array | Hex): Hex {
   return blake2AsHex(u8aToU8a(code), 256);

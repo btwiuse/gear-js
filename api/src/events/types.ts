@@ -9,7 +9,7 @@ import {
   ProgramChanged,
   UserMessageRead,
   UserMessageSent,
-} from './GearEvents';
+} from './GearEvents.ts';
 
 export interface IGearEvent {
   MessageEnqueued: MessageEnqueued;

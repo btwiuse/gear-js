@@ -1,4 +1,4 @@
-import { Hex } from '../common';
+import { Hex } from '../common.ts';
 
 export interface Metadata {
   init_input?: string;

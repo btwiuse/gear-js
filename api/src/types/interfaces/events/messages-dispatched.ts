@@ -1,4 +1,4 @@
-import { Enum, Null } from '@polkadot/types';
+import { Enum, Null } from 'https://deno.land/x/polkadot@0.2.11/types/mod.ts';
 
 export interface DispatchStatus extends Enum {
   isSuccess: boolean;

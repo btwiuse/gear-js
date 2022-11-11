@@ -1,6 +1,6 @@
-import { Enum, Null } from '@polkadot/types';
+import { Enum, Null } from 'https://deno.land/x/polkadot@0.2.11/types/mod.ts';
 
-import { Reason } from './common';
+import { Reason } from './common.ts';
 
 export interface UserMessageReadRuntimeReason extends Enum {
   isMessageReplied: boolean;

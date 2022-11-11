@@ -1,9 +1,9 @@
-import { u8, u32, u64, u128, i32, Option, Vec, Struct, BTreeMap, BTreeSet } from '@polkadot/types';
-import { AccountId32 } from '@polkadot/types/interfaces';
-import { Codec } from '@polkadot/types/types';
+import { u8, u32, u64, u128, i32, Option, Vec, Struct, BTreeMap, BTreeSet } from 'https://deno.land/x/polkadot@0.2.11/types/mod.ts';
+import { AccountId32 } from 'https://deno.land/x/polkadot@0.2.11/types/interfaces/index.ts';
+import { Codec } from 'https://deno.land/x/polkadot@0.2.11/types/types/index.ts';
 
-import { MessageId, ProgramId } from '../ids';
-import { DispatchKind } from './entry';
+import { MessageId, ProgramId } from '../ids/index.ts';
+import { DispatchKind } from './entry.ts';
 
 export type ExitCode = i32;
 

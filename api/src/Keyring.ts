@@ -1,11 +1,11 @@
-import { mnemonicGenerate, mnemonicToMiniSecret } from '@polkadot/util-crypto';
-import { hexToU8a, isU8a, stringToU8a, isString, u8aToHex } from '@polkadot/util';
-import { KeyringPair, KeyringPair$Json } from '@polkadot/keyring/types';
-import { Keypair } from '@polkadot/util-crypto/types';
-import { waitReady } from '@polkadot/wasm-crypto';
-import { Keyring } from '@polkadot/api';
+import { mnemonicGenerate, mnemonicToMiniSecret } from 'https://deno.land/x/polkadot@0.2.11/util-crypto/mod.ts';
+import { hexToU8a, isU8a, stringToU8a, isString, u8aToHex } from 'https://deno.land/x/polkadot@0.2.11/util/mod.ts';
+import { KeyringPair, KeyringPair$Json } from 'https://deno.land/x/polkadot@0.2.11/keyring/types.ts';
+import { Keypair } from 'https://deno.land/x/polkadot@0.2.11/util-crypto/types.ts';
+import { waitReady } from 'https://deno.land/x/polkadot@0.2.11/wasm-crypto/mod.ts';
+import { Keyring } from 'https://deno.land/x/polkadot@0.2.11/api/mod.ts';
 
-import { decodeAddress } from './utils';
+import { decodeAddress } from './utils/index.ts';
 
 export class GearKeyring {
   private static unlock(keyring: KeyringPair, passphrase?: string) {

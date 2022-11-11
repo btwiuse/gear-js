@@ -1,5 +1,5 @@
-import { Codec } from '@polkadot/types/types';
-import { BN } from '@polkadot/util';
+import { Codec } from 'https://deno.land/x/polkadot@0.2.11/types/types/index.ts';
+import { BN } from 'https://deno.land/x/polkadot@0.2.11/util/mod.ts';
 
 export interface ISystemAccountInfo extends Codec {
   nonce: Codec;

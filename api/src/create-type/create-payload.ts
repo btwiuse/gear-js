@@ -1,8 +1,8 @@
-import { Codec } from '@polkadot/types/types';
-import { isHex, isU8a, u8aToHex } from '@polkadot/util';
+import { Codec } from 'https://deno.land/x/polkadot@0.2.11/types/types/index.ts';
+import { isHex, isU8a, u8aToHex } from 'https://deno.land/x/polkadot@0.2.11/util/mod.ts';
 
-import { Hex } from '../types';
-import { CreateType } from './CreateType';
+import { Hex } from '../types/index.ts';
+import { CreateType } from './CreateType.ts';
 
 export function createPayload(payload: unknown, type: string, types: Hex | Uint8Array): Hex | Uint8Array | Codec {
   if (payload === undefined) {

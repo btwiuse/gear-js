@@ -1,16 +1,16 @@
-import { HeaderExtended } from '@polkadot/api-derive/types';
-import { PromiseResult } from '@polkadot/api/types';
-import { u64, Compact, GenericExtrinsic, Vec } from '@polkadot/types';
-import { SignedBlock, BlockNumber, BlockHash } from '@polkadot/types/interfaces';
-import { FrameSystemEventRecord } from '@polkadot/types/lookup';
-import { AnyTuple, AnyNumber } from '@polkadot/types/types';
-import { isHex, isU8a, isNumber } from '@polkadot/util';
-import { Observable } from 'rxjs';
+import { HeaderExtended } from 'https://deno.land/x/polkadot@0.2.11/api-derive/types.ts';
+import { PromiseResult } from 'https://deno.land/x/polkadot@0.2.11/api/types/index.ts';
+import { u64, Compact, GenericExtrinsic, Vec } from 'https://deno.land/x/polkadot@0.2.11/types/mod.ts';
+import { SignedBlock, BlockNumber, BlockHash } from 'https://deno.land/x/polkadot@0.2.11/types/interfaces/index.ts';
+import { FrameSystemEventRecord } from 'https://deno.land/x/polkadot@0.2.11/types/lookup.ts';
+import { AnyTuple, AnyNumber } from 'https://deno.land/x/polkadot@0.2.11/types/types/index.ts';
+import { isHex, isU8a, isNumber } from 'https://deno.land/x/polkadot@0.2.11/util/mod.ts';
+import { Observable } from 'https://deno.land/x/rxjs/mod.ts';
 
-import { CreateType } from './create-type';
-import { GetBlockError } from './errors';
-import { GearApi } from './GearApi';
-import { Hex } from './types';
+import { CreateType } from './create-type/index.ts';
+import { GetBlockError } from './errors/index.ts';
+import { GearApi } from './GearApi.ts';
+import { Hex } from './types/index.ts';
 
 export class GearBlock {
   subscribeNewHeads: PromiseResult<() => Observable<HeaderExtended>>;

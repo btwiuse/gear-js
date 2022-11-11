@@ -1,5 +1,5 @@
-import { Null, Enum } from '@polkadot/types';
-import { BlockNumber, H256 } from '@polkadot/types/interfaces';
+import { Null, Enum } from 'https://deno.land/x/polkadot@0.2.11/types/mod.ts';
+import { BlockNumber, H256 } from 'https://deno.land/x/polkadot@0.2.11/types/interfaces/index.ts';
 
 export interface ProgramChangedKind extends Enum {
   isActive: boolean;

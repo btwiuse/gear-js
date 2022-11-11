@@ -1,10 +1,10 @@
-import { Enum, u32, Map, BTreeSet, BTreeMap } from '@polkadot/types';
-import { Hash } from '@polkadot/types/interfaces';
+import { Enum, u32, Map, BTreeSet, BTreeMap } from 'https://deno.land/x/polkadot@0.2.11/types/mod.ts';
+import { Hash } from 'https://deno.land/x/polkadot@0.2.11/types/interfaces/index.ts';
 
-import { MessageId, ProgramId } from '../ids';
-import { GasReservationSlot } from '../gas';
-import { DispatchKind } from '../message';
-import { WasmPageNumber } from './pages';
+import { MessageId, ProgramId } from '../ids/index.ts';
+import { GasReservationSlot } from '../gas.ts';
+import { DispatchKind } from '../message/index.ts';
+import { WasmPageNumber } from './pages.ts';
 
 export interface IProgram extends Enum {
   isActive: boolean;

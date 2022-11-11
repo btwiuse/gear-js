@@ -1,10 +1,10 @@
-import { SubmittableExtrinsic } from '@polkadot/api/types';
-import { ISubmittableResult } from '@polkadot/types/types';
-import { Balance } from '@polkadot/types/interfaces';
-import { BN } from '@polkadot/util';
+import { SubmittableExtrinsic } from 'https://deno.land/x/polkadot@0.2.11/api/types/index.ts';
+import { ISubmittableResult } from 'https://deno.land/x/polkadot@0.2.11/types/types/index.ts';
+import { Balance } from 'https://deno.land/x/polkadot@0.2.11/types/interfaces/index.ts';
+import { BN } from 'https://deno.land/x/polkadot@0.2.11/util/mod.ts';
 
-import { GearTransaction } from './Transaction';
-import { ISystemAccountInfo } from './types';
+import { GearTransaction } from './Transaction.ts';
+import { ISystemAccountInfo } from './types/index.ts';
 
 export class GearBalance extends GearTransaction {
   async findOut(publicKey: string): Promise<Balance> {

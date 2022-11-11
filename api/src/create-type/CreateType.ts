@@ -1,12 +1,12 @@
-import { isHex, isU8a } from '@polkadot/util';
-import { Codec, Registry } from '@polkadot/types/types';
-import { Bytes, TypeRegistry } from '@polkadot/types';
-import { RegistryTypes } from '@polkadot/types-codec/types/registry';
+import { isHex, isU8a } from 'https://deno.land/x/polkadot@0.2.11/util/mod.ts';
+import { Codec, Registry } from 'https://deno.land/x/polkadot@0.2.11/types/types/index.ts';
+import { Bytes, TypeRegistry } from 'https://deno.land/x/polkadot@0.2.11/types/mod.ts';
+import { RegistryTypes } from 'https://deno.land/x/polkadot@0.2.11/types-codec/types/registry.ts';
 
-import { getTypeAndPayload, typeIsGeneric, typeIsString } from '../utils/types';
-import { TypeInfoRegistry } from './TypeInfoReg';
-import { toJSON, isJSON } from '../utils/json';
-import { Hex, Metadata } from '../types';
+import { getTypeAndPayload, typeIsGeneric, typeIsString } from '../utils/types.ts';
+import { TypeInfoRegistry } from './TypeInfoReg.ts';
+import { toJSON, isJSON } from '../utils/json.ts';
+import { Hex, Metadata } from '../types/index.ts';
 
 export class CreateType {
   registry: Registry;

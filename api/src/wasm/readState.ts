@@ -1,9 +1,9 @@
-import { u64 } from '@polkadot/types';
-import { BlockNumber } from '@polkadot/types/interfaces';
+import { u64 } from 'https://deno.land/x/polkadot@0.2.11/types/mod.ts';
+import { BlockNumber } from 'https://deno.land/x/polkadot@0.2.11/types/interfaces/index.ts';
 
-import { getExportValue, PAGE_SIZE } from './utils';
-import { IGearPages } from '../types';
-import importObj from './importObj';
+import { getExportValue, PAGE_SIZE } from './utils.ts';
+import { IGearPages } from '../types/index.ts';
+import importObj from './importObj.ts';
 
 export async function readState(
   wasmBytes: Buffer,

@@ -1,5 +1,5 @@
-import { Hex } from './common';
-import { Bytes } from '@polkadot/types';
-import { AnyJson } from '@polkadot/types/types';
+import { Hex } from './common.ts';
+import { Bytes } from 'https://deno.land/x/polkadot@0.2.11/types/mod.ts';
+import { AnyJson } from 'https://deno.land/x/polkadot@0.2.11/types/types/index.ts';
 
 export type PayloadType = Hex | Uint8Array | string | Bytes | AnyJson;

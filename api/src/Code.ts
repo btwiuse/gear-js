@@ -1,10 +1,10 @@
-import { ISubmittableResult } from '@polkadot/types/types';
-import { SubmittableExtrinsic } from '@polkadot/api/types';
-import { Bytes, Option } from '@polkadot/types';
+import { ISubmittableResult } from 'https://deno.land/x/polkadot@0.2.11/types/types/index.ts';
+import { SubmittableExtrinsic } from 'https://deno.land/x/polkadot@0.2.11/api/types/index.ts';
+import { Bytes, Option } from 'https://deno.land/x/polkadot@0.2.11/types/mod.ts';
 
-import { generateCodeHash, validateCodeId } from './utils';
-import { CodeMetadata, CodeStorage, Hex } from './types';
-import { GearTransaction } from './Transaction';
+import { generateCodeHash, validateCodeId } from './utils/index.ts';
+import { CodeMetadata, CodeStorage, Hex } from './types/index.ts';
+import { GearTransaction } from './Transaction.ts';
 
 export class GearCode extends GearTransaction {
   /**

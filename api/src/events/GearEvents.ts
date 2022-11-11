@@ -1,4 +1,4 @@
-import { GenericEventData, GenericEvent } from '@polkadot/types';
+import { GenericEventData, GenericEvent } from 'https://deno.land/x/polkadot@0.2.11/types/mod.ts';
 import {
   CodeChangedData,
   DebugData,
@@ -11,7 +11,7 @@ import {
   UserMessageSentData,
   DebugModeData,
   MessageWakenData,
-} from './GearEventData';
+} from './GearEventData.ts';
 
 export interface GearEvent<D extends GenericEventData> extends GenericEvent {
   data: D;

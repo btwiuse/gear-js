@@ -1,10 +1,10 @@
-import { isHex, isString } from '@polkadot/util';
+import { isHex, isString } from 'https://deno.land/x/polkadot@0.2.11/util/mod.ts';
 
-import { Hex, PayloadType, Value } from './types';
-import { Metadata } from './types/interfaces';
-import { createPayload } from './create-type';
-import { GearApi } from './GearApi';
-import { GasInfo } from './types';
+import { Hex, PayloadType, Value } from './types/index.ts';
+import { Metadata } from './types/interfaces/index.ts';
+import { createPayload } from './create-type/index.ts';
+import { GearApi } from './GearApi.ts';
+import { GasInfo } from './types/index.ts';
 
 export class GearGas {
   constructor(private _api: GearApi) {}

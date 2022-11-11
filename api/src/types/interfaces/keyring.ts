@@ -1,4 +1,4 @@
-import { KeyringPair$Json } from '@polkadot/keyring/types';
+import { KeyringPair$Json } from 'https://deno.land/x/polkadot@0.2.11/keyring/types.ts';
 
 export interface CreateKeyring {
   keyPairJson?: KeyringPair$Json | string;

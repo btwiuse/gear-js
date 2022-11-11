@@ -1,4 +1,4 @@
-import { Enum } from '@polkadot/types';
+import { Enum } from 'https://deno.land/x/polkadot@0.2.11/types/mod.ts';
 
 export interface Reason<R extends Enum, S extends Enum> extends Enum {
   isRuntime: boolean;

@@ -1,8 +1,8 @@
-import { ISubmittableResult } from '@polkadot/types/types';
-import { SubmittableExtrinsic } from '@polkadot/api/types';
-import { AnyJson } from '@polkadot/types/types';
+import { ISubmittableResult } from 'https://deno.land/x/polkadot@0.2.11/types/types/index.ts';
+import { SubmittableExtrinsic } from 'https://deno.land/x/polkadot@0.2.11/api/types/index.ts';
+import { AnyJson } from 'https://deno.land/x/polkadot@0.2.11/types/types/index.ts';
 
-import { GasLimit, Hex, Value } from '../../common';
+import { GasLimit, Hex, Value } from '../../common.ts';
 
 export interface IProgramUploadOptions {
   code: Buffer | Uint8Array;

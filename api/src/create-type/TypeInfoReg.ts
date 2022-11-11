@@ -1,11 +1,11 @@
-import { Hex } from '../types';
-import { TypeRegistry, PortableRegistry } from '@polkadot/types';
-import { hexToU8a, isHex } from '@polkadot/util';
-import { Codec } from '@polkadot/types/types';
+import { Hex } from '../types/index.ts';
+import { TypeRegistry, PortableRegistry } from 'https://deno.land/x/polkadot@0.2.11/types/mod.ts';
+import { hexToU8a, isHex } from 'https://deno.land/x/polkadot@0.2.11/util/mod.ts';
+import { Codec } from 'https://deno.land/x/polkadot@0.2.11/types/types/index.ts';
 
-import { isJSON, toJSON } from '../utils/json';
-import { joinTypePath } from '../utils/types';
-import { REGULAR_EXP } from '../utils/regexp';
+import { isJSON, toJSON } from '../utils/json.ts';
+import { joinTypePath } from '../utils/types.ts';
+import { REGULAR_EXP } from '../utils/regexp.ts';
 
 function getName(path: string[], name: string, slice = -1) {
   if (name.endsWith(joinTypePath(path.slice(slice)))) {
