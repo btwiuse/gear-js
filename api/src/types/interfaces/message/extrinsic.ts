@@ -1,4 +1,4 @@
-import { H256 } from 'https://deno.land/x/polkadot@0.2.11/types/interfaces/index.ts';
+import { H256 } from 'https://deno.land/x/polkadot@0.2.15/types/interfaces/index.ts';
 
 import { GasLimit, Hex, Value } from '../../common.ts';
 import { PayloadType } from '../../payload.ts';

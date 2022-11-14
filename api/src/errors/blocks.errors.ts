@@ -1,4 +1,4 @@
-import { isU8a, u8aToString } from 'https://deno.land/x/polkadot@0.2.11/util/mod.ts';
+import { isU8a, u8aToString } from 'https://deno.land/x/polkadot@0.2.15/util/mod.ts';
 
 export class GetBlockError extends Error {
   name = 'GetBlockError';

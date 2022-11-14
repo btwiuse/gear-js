@@ -1,7 +1,7 @@
 import { Hex } from '../types/index.ts';
-import { TypeRegistry, PortableRegistry } from 'https://deno.land/x/polkadot@0.2.11/types/mod.ts';
-import { hexToU8a, isHex } from 'https://deno.land/x/polkadot@0.2.11/util/mod.ts';
-import { Codec } from 'https://deno.land/x/polkadot@0.2.11/types/types/index.ts';
+import { TypeRegistry, PortableRegistry } from 'https://deno.land/x/polkadot@0.2.15/types/mod.ts';
+import { hexToU8a, isHex } from 'https://deno.land/x/polkadot@0.2.15/util/mod.ts';
+import { Codec } from 'https://deno.land/x/polkadot@0.2.15/types/types/index.ts';
 
 import { isJSON, toJSON } from '../utils/json.ts';
 import { joinTypePath } from '../utils/types.ts';

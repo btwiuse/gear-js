@@ -1,4 +1,4 @@
-import { Option } from 'https://deno.land/x/polkadot@0.2.11/types/mod.ts';
+import { Option } from 'https://deno.land/x/polkadot@0.2.15/types/mod.ts';
 
 import { Hex, WaitlistItem } from './types/index.ts';
 import { GearApi } from './GearApi.ts';

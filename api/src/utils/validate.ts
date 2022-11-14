@@ -1,5 +1,5 @@
-import { BN, u8aToBigInt } from 'https://deno.land/x/polkadot@0.2.11/util/mod.ts';
-import { u128, u64 } from 'https://deno.land/x/polkadot@0.2.11/types/mod.ts';
+import { BN, u8aToBigInt } from 'https://deno.land/x/polkadot@0.2.15/util/mod.ts';
+import { u128, u64 } from 'https://deno.land/x/polkadot@0.2.15/types/mod.ts';
 
 import { GasLimit, Hex, Value } from '../types/index.ts';
 import { ValidationError } from '../errors/index.ts';

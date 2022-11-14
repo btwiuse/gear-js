@@ -1,4 +1,4 @@
-import { Codec, AnyJson } from 'https://deno.land/x/polkadot@0.2.11/types/types/index.ts';
+import { Codec, AnyJson } from 'https://deno.land/x/polkadot@0.2.15/types/types/index.ts';
 
 import { getWasmMetadata, readState } from './wasm/index.ts';
 import { ReadStateError } from './errors/index.ts';

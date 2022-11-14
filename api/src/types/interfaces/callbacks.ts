@@ -1,5 +1,5 @@
-import { Header, Balance } from 'https://deno.land/x/polkadot@0.2.11/types/interfaces/index.ts';
-import { ISubmittableResult } from 'https://deno.land/x/polkadot@0.2.11/types/types/index.ts';
+import { Header, Balance } from 'https://deno.land/x/polkadot@0.2.15/types/interfaces/index.ts';
+import { ISubmittableResult } from 'https://deno.land/x/polkadot@0.2.15/types/types/index.ts';
 
 export interface IBlocksCallback {
   (event: Header): void | Promise<void>;

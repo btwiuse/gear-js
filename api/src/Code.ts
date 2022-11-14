@@ -1,6 +1,6 @@
-import { ISubmittableResult } from 'https://deno.land/x/polkadot@0.2.11/types/types/index.ts';
-import { SubmittableExtrinsic } from 'https://deno.land/x/polkadot@0.2.11/api/types/index.ts';
-import { Bytes, Option } from 'https://deno.land/x/polkadot@0.2.11/types/mod.ts';
+import { ISubmittableResult } from 'https://deno.land/x/polkadot@0.2.15/types/types/index.ts';
+import { SubmittableExtrinsic } from 'https://deno.land/x/polkadot@0.2.15/api/types/index.ts';
+import { Bytes, Option } from 'https://deno.land/x/polkadot@0.2.15/types/mod.ts';
 
 import { generateCodeHash, validateCodeId } from './utils/index.ts';
 import { CodeMetadata, CodeStorage, Hex } from './types/index.ts';

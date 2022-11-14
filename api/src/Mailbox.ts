@@ -1,5 +1,5 @@
-import { AccountId32 } from 'https://deno.land/x/polkadot@0.2.11/types/interfaces/index.ts';
-import { Option } from 'https://deno.land/x/polkadot@0.2.11/types/mod.ts';
+import { AccountId32 } from 'https://deno.land/x/polkadot@0.2.15/types/interfaces/index.ts';
+import { Option } from 'https://deno.land/x/polkadot@0.2.15/types/mod.ts';
 
 import { Hex, MailboxItem } from './types/index.ts';
 import { GearClaimValue } from './Claim.ts';

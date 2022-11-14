@@ -1,6 +1,6 @@
-import { randomAsHex } from 'https://deno.land/x/polkadot@0.2.11/util-crypto/mod.ts';
-import { u8aToHex } from 'https://deno.land/x/polkadot@0.2.11/util/mod.ts';
-import { Bytes } from 'https://deno.land/x/polkadot@0.2.11/types/mod.ts';
+import { randomAsHex } from 'https://deno.land/x/polkadot@0.2.15/util-crypto/mod.ts';
+import { u8aToHex } from 'https://deno.land/x/polkadot@0.2.15/util/mod.ts';
+import { Bytes } from 'https://deno.land/x/polkadot@0.2.15/types/mod.ts';
 
 import { IProgramCreateOptions, IProgramCreateResult, IProgramUploadOptions, IProgramUploadResult, Hex } from './types/index.ts';
 import { generateCodeHash, generateProgramId, GPROG, GPROG_HEX, validateGasLimit, validateValue } from './utils/index.ts';

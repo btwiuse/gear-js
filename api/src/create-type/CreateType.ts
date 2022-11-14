@@ -1,7 +1,7 @@
-import { isHex, isU8a } from 'https://deno.land/x/polkadot@0.2.11/util/mod.ts';
-import { Codec, Registry } from 'https://deno.land/x/polkadot@0.2.11/types/types/index.ts';
-import { Bytes, TypeRegistry } from 'https://deno.land/x/polkadot@0.2.11/types/mod.ts';
-import { RegistryTypes } from 'https://deno.land/x/polkadot@0.2.11/types-codec/types/registry.ts';
+import { isHex, isU8a } from 'https://deno.land/x/polkadot@0.2.15/util/mod.ts';
+import { Codec, Registry } from 'https://deno.land/x/polkadot@0.2.15/types/types/index.ts';
+import { Bytes, TypeRegistry } from 'https://deno.land/x/polkadot@0.2.15/types/mod.ts';
+import { RegistryTypes } from 'https://deno.land/x/polkadot@0.2.15/types-codec/types/registry.ts';
 
 import { getTypeAndPayload, typeIsGeneric, typeIsString } from '../utils/types.ts';
 import { TypeInfoRegistry } from './TypeInfoReg.ts';

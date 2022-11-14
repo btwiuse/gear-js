@@ -1,5 +1,5 @@
-import { u32, u128, Vec, Option, BTreeMap, BTreeSet, GenericEventData, Bool } from 'https://deno.land/x/polkadot@0.2.11/types/mod.ts';
-import { BlockNumber, AccountId32 } from 'https://deno.land/x/polkadot@0.2.11/types/interfaces/index.ts';
+import { u32, u128, Vec, Option, BTreeMap, BTreeSet, GenericEventData, Bool } from 'https://deno.land/x/polkadot@0.2.15/types/mod.ts';
+import { BlockNumber, AccountId32 } from 'https://deno.land/x/polkadot@0.2.15/types/interfaces/index.ts';
 
 import { QueuedDispatch, ProgramDetails } from '../types/index.ts';
 import {

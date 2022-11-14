@@ -1,5 +1,5 @@
-import { ISubmittableResult } from 'https://deno.land/x/polkadot@0.2.11/types/types/index.ts';
-import { SubmittableExtrinsic } from 'https://deno.land/x/polkadot@0.2.11/api/types/index.ts';
+import { ISubmittableResult } from 'https://deno.land/x/polkadot@0.2.15/types/types/index.ts';
+import { SubmittableExtrinsic } from 'https://deno.land/x/polkadot@0.2.15/api/types/index.ts';
 
 import { IMessageSendOptions, IMessageSendReplyOptions, Metadata } from './types/index.ts';
 import { SendMessageError, SendReplyError } from './errors/index.ts';

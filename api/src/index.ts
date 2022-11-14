@@ -1,4 +1,4 @@
-import 'https://deno.land/x/polkadot@0.2.11/api-augment/mod.ts';
+import 'https://deno.land/x/polkadot@0.2.15/api-augment/mod.ts';
 export { GearApi } from './GearApi.ts';
 export { GearKeyring } from './Keyring.ts';
 export { GearProgram } from './Program.ts';
