@@ -1,5 +1,6 @@
-const encoder = new TextEncoder();
+import { toHex } from './toHex.ts';
+
 export const GPROG = 'g::prog::';
 export const GPAGES = 'g::pages::';
-export const GPROG_HEX = encoder.encode(GPROG).toString('hex');
-export const GPAGES_HEX = encoder.encode('g::pages::').toString('hex');
+export const GPROG_HEX = toHex(GPROG);
+export const GPAGES_HEX = toHex(GPAGES);

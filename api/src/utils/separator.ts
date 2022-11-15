@@ -1,2 +1,3 @@
-const encoder = new TextEncoder();
-export const SEPARATOR = encoder.encode('::').toString('hex');
+import { toHex } from './toHex.ts';
+
+export const SEPARATOR = toHex('::');
