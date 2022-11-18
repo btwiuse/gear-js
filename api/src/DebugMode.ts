@@ -1,5 +1,5 @@
-import { SubmittableExtrinsic, UnsubscribePromise } from 'https://deno.land/x/polkadot@0.2.15/api/types/index.ts';
-import { ISubmittableResult } from 'https://deno.land/x/polkadot@0.2.15/types/types/index.ts';
+import { SubmittableExtrinsic, UnsubscribePromise } from 'https://deno.land/x/polkadot@0.2.16/api/types/index.ts';
+import { ISubmittableResult } from 'https://deno.land/x/polkadot@0.2.16/types/types/index.ts';
 
 import { GearTransaction } from './Transaction.ts';
 import { DebugDataSnapshot } from './events/index.ts';

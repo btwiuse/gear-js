@@ -1,5 +1,5 @@
-import { AnyNumber } from 'https://deno.land/x/polkadot@0.2.15/types/types/index.ts';
-import { u128, u64 } from 'https://deno.land/x/polkadot@0.2.15/types/mod.ts';
+import { AnyNumber } from 'https://deno.land/x/polkadot@0.2.16/types/types/index.ts';
+import { u128, u64 } from 'https://deno.land/x/polkadot@0.2.16/types/mod.ts';
 
 export type Hex = `0x${string}`;
 

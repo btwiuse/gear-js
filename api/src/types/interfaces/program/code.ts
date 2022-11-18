@@ -1,6 +1,6 @@
-import { Codec } from 'https://deno.land/x/polkadot@0.2.15/types-codec/types/index.ts';
-import { H256 } from 'https://deno.land/x/polkadot@0.2.15/types/interfaces/index.ts';
-import { u8, u32, Option, BTreeSet, Vec } from 'https://deno.land/x/polkadot@0.2.15/types/mod.ts';
+import { Codec } from 'https://deno.land/x/polkadot@0.2.16/types-codec/types/index.ts';
+import { H256 } from 'https://deno.land/x/polkadot@0.2.16/types/interfaces/index.ts';
+import { u8, u32, Option, BTreeSet, Vec } from 'https://deno.land/x/polkadot@0.2.16/types/mod.ts';
 import { WasmPageNumber } from './pages.ts';
 import { DispatchKind } from '../message/index.ts';
 

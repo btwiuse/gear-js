@@ -1,5 +1,5 @@
-import { stringCamelCase } from 'https://deno.land/x/polkadot@0.2.15/util/mod.ts';
-import { Text } from 'https://deno.land/x/polkadot@0.2.15/types/mod.ts';
+import { stringCamelCase } from 'https://deno.land/x/polkadot@0.2.16/util/mod.ts';
+import { Text } from 'https://deno.land/x/polkadot@0.2.16/types/mod.ts';
 
 export function toCamelCase(array: string[] | Text[]): string {
   let result = stringCamelCase(array.join('_'));

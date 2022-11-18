@@ -1,5 +1,5 @@
-import { Codec } from 'https://deno.land/x/polkadot@0.2.15/types/types/index.ts';
-import { isHex, isU8a, u8aToHex } from 'https://deno.land/x/polkadot@0.2.15/util/mod.ts';
+import { Codec } from 'https://deno.land/x/polkadot@0.2.16/types/types/index.ts';
+import { isHex, isU8a, u8aToHex } from 'https://deno.land/x/polkadot@0.2.16/util/mod.ts';
 
 import { Hex } from '../types/index.ts';
 import { CreateType } from './CreateType.ts';

@@ -1,5 +1,5 @@
-import { u8, u32, u64, Null, Option, Vec, BTreeMap, Enum, Struct } from 'https://deno.land/x/polkadot@0.2.15/types/mod.ts';
-import { Codec } from 'https://deno.land/x/polkadot@0.2.15/types/types/index.ts';
+import { u8, u32, u64, Null, Option, Vec, BTreeMap, Enum, Struct } from 'https://deno.land/x/polkadot@0.2.16/types/mod.ts';
+import { Codec } from 'https://deno.land/x/polkadot@0.2.16/types/types/index.ts';
 import { CodeId, ProgramId } from '../ids/index.ts';
 
 import { Entry, Payload, StoredMessage } from '../message/index.ts';

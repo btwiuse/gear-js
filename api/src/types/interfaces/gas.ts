@@ -1,4 +1,4 @@
-import { Struct, u64, u32, bool } from 'https://deno.land/x/polkadot@0.2.15/types/mod.ts';
+import { Struct, u64, u32, bool } from 'https://deno.land/x/polkadot@0.2.16/types/mod.ts';
 
 export interface GasInfo extends Struct {
   min_limit: u64;

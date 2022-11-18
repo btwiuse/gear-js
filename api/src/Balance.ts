@@ -1,7 +1,7 @@
-import { SubmittableExtrinsic } from 'https://deno.land/x/polkadot@0.2.15/api/types/index.ts';
-import { ISubmittableResult } from 'https://deno.land/x/polkadot@0.2.15/types/types/index.ts';
-import { Balance } from 'https://deno.land/x/polkadot@0.2.15/types/interfaces/index.ts';
-import { BN } from 'https://deno.land/x/polkadot@0.2.15/util/mod.ts';
+import { SubmittableExtrinsic } from 'https://deno.land/x/polkadot@0.2.16/api/types/index.ts';
+import { ISubmittableResult } from 'https://deno.land/x/polkadot@0.2.16/types/types/index.ts';
+import { Balance } from 'https://deno.land/x/polkadot@0.2.16/types/interfaces/index.ts';
+import { BN } from 'https://deno.land/x/polkadot@0.2.16/util/mod.ts';
 
 import { GearTransaction } from './Transaction.ts';
 import { ISystemAccountInfo } from './types/index.ts';

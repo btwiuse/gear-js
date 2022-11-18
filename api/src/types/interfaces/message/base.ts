@@ -1,6 +1,6 @@
-import { u8, u32, u64, u128, i32, Option, Vec, Struct, BTreeMap, BTreeSet } from 'https://deno.land/x/polkadot@0.2.15/types/mod.ts';
-import { AccountId32 } from 'https://deno.land/x/polkadot@0.2.15/types/interfaces/index.ts';
-import { Codec } from 'https://deno.land/x/polkadot@0.2.15/types/types/index.ts';
+import { u8, u32, u64, u128, i32, Option, Vec, Struct, BTreeMap, BTreeSet } from 'https://deno.land/x/polkadot@0.2.16/types/mod.ts';
+import { AccountId32 } from 'https://deno.land/x/polkadot@0.2.16/types/interfaces/index.ts';
+import { Codec } from 'https://deno.land/x/polkadot@0.2.16/types/types/index.ts';
 
 import { MessageId, ProgramId } from '../ids/index.ts';
 import { DispatchKind } from './entry.ts';

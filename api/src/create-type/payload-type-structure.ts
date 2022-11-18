@@ -1,4 +1,4 @@
-import { AnyJson } from 'https://deno.land/x/polkadot@0.2.15/types/types/index.ts';
+import { AnyJson } from 'https://deno.land/x/polkadot@0.2.16/types/types/index.ts';
 
 import { isJSON, splitByCommas, toJSON } from '../utils/index.ts';
 import { enumTypes, TypeTree } from './interfaces.ts';
