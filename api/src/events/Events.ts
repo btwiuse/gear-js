@@ -1,4 +1,4 @@
-import { UnsubscribePromise } from 'https://deno.land/x/polkadot@0.2.16/api/types/index.ts';
+import { UnsubscribePromise } from 'https://deno.land/x/polkadot@0.2.17/api/types/index.ts';
 
 import { ISystemAccountInfo, IBalanceCallback, IBlocksCallback, Hex } from '../types/index.ts';
 import { IGearEvent } from './types.ts';

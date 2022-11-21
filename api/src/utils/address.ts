@@ -1,5 +1,5 @@
-import { u8aToHex } from 'https://deno.land/x/polkadot@0.2.16/util/mod.ts';
-import { Keyring } from 'https://deno.land/x/polkadot@0.2.16/api/mod.ts';
+import { u8aToHex } from 'https://deno.land/x/polkadot@0.2.17/util/mod.ts';
+import { Keyring } from 'https://deno.land/x/polkadot@0.2.17/api/mod.ts';
 
 import { Hex } from '../types/index.ts';
 

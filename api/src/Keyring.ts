@@ -1,9 +1,9 @@
-import { mnemonicGenerate, mnemonicToMiniSecret } from 'https://deno.land/x/polkadot@0.2.16/util-crypto/mod.ts';
-import { hexToU8a, isU8a, stringToU8a, isString, u8aToHex } from 'https://deno.land/x/polkadot@0.2.16/util/mod.ts';
-import { KeyringPair, KeyringPair$Json } from 'https://deno.land/x/polkadot@0.2.16/keyring/types.ts';
-import { Keypair } from 'https://deno.land/x/polkadot@0.2.16/util-crypto/types.ts';
-import { waitReady } from 'https://deno.land/x/polkadot@0.2.16/wasm-crypto/mod.ts';
-import { Keyring } from 'https://deno.land/x/polkadot@0.2.16/api/mod.ts';
+import { mnemonicGenerate, mnemonicToMiniSecret } from 'https://deno.land/x/polkadot@0.2.17/util-crypto/mod.ts';
+import { hexToU8a, isU8a, stringToU8a, isString, u8aToHex } from 'https://deno.land/x/polkadot@0.2.17/util/mod.ts';
+import { KeyringPair, KeyringPair$Json } from 'https://deno.land/x/polkadot@0.2.17/keyring/types.ts';
+import { Keypair } from 'https://deno.land/x/polkadot@0.2.17/util-crypto/types.ts';
+import { waitReady } from 'https://deno.land/x/polkadot@0.2.17/wasm-crypto/mod.ts';
+import { Keyring } from 'https://deno.land/x/polkadot@0.2.17/api/mod.ts';
 
 import { decodeAddress } from './utils/index.ts';
 

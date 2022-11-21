@@ -1,8 +1,8 @@
-import { SpRuntimeDispatchError } from 'https://deno.land/x/polkadot@0.2.16/types/lookup.ts';
-import { RegistryError } from 'https://deno.land/x/polkadot@0.2.16/types-codec/types/index.ts';
-import { ApiPromise, WsProvider } from 'https://deno.land/x/polkadot@0.2.16/api/mod.ts';
-import { Event } from 'https://deno.land/x/polkadot@0.2.16/types/interfaces/index.ts';
-import { u128, u64 } from 'https://deno.land/x/polkadot@0.2.16/types/mod.ts';
+import { SpRuntimeDispatchError } from 'https://deno.land/x/polkadot@0.2.17/types/lookup.ts';
+import { RegistryError } from 'https://deno.land/x/polkadot@0.2.17/types-codec/types/index.ts';
+import { ApiPromise, WsProvider } from 'https://deno.land/x/polkadot@0.2.17/api/mod.ts';
+import { Event } from 'https://deno.land/x/polkadot@0.2.17/types/interfaces/index.ts';
+import { u128, u64 } from 'https://deno.land/x/polkadot@0.2.17/types/mod.ts';
 
 import { gearRpc, gearTypes } from './default/index.ts';
 import { GearProgramState } from './State.ts';

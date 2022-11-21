@@ -1,4 +1,4 @@
-import { isHex, isString } from 'https://deno.land/x/polkadot@0.2.16/util/mod.ts';
+import { isHex, isString } from 'https://deno.land/x/polkadot@0.2.17/util/mod.ts';
 
 import { Hex, PayloadType, Value } from './types/index.ts';
 import { Metadata } from './types/interfaces/index.ts';

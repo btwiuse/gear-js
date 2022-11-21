@@ -1,4 +1,4 @@
-import { Enum, Null } from 'https://deno.land/x/polkadot@0.2.16/types/mod.ts';
+import { Enum, Null } from 'https://deno.land/x/polkadot@0.2.17/types/mod.ts';
 import { MessageId } from '../ids/index.ts';
 
 export interface Entry extends Enum {

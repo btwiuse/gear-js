@@ -1,5 +1,5 @@
-import { Option, Raw } from 'https://deno.land/x/polkadot@0.2.16/types/mod.ts';
-import { Codec } from 'https://deno.land/x/polkadot@0.2.16/types/types/index.ts';
+import { Option, Raw } from 'https://deno.land/x/polkadot@0.2.17/types/mod.ts';
+import { Codec } from 'https://deno.land/x/polkadot@0.2.17/types/types/index.ts';
 
 import { ActiveProgram, IGearPages, IProgram, Hex } from './types/index.ts';
 import { GPAGES_HEX, GPROG_HEX, SEPARATOR } from './utils/index.ts';

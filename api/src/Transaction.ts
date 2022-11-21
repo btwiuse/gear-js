@@ -1,7 +1,7 @@
-import { AddressOrPair, SignerOptions, SubmittableExtrinsic } from 'https://deno.land/x/polkadot@0.2.16/api/types/index.ts';
-import { Hash, RuntimeDispatchInfo } from 'https://deno.land/x/polkadot@0.2.16/types/interfaces/index.ts';
-import { ISubmittableResult } from 'https://deno.land/x/polkadot@0.2.16/types/types/index.ts';
-import { isFunction } from 'https://deno.land/x/polkadot@0.2.16/util/mod.ts';
+import { AddressOrPair, SignerOptions, SubmittableExtrinsic } from 'https://deno.land/x/polkadot@0.2.17/api/types/index.ts';
+import { Hash, RuntimeDispatchInfo } from 'https://deno.land/x/polkadot@0.2.17/types/interfaces/index.ts';
+import { ISubmittableResult } from 'https://deno.land/x/polkadot@0.2.17/types/types/index.ts';
+import { isFunction } from 'https://deno.land/x/polkadot@0.2.17/util/mod.ts';
 
 import { TransactionStatusCb } from './types/index.ts';
 import { TransactionError } from './errors/index.ts';

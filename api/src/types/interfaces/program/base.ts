@@ -1,5 +1,5 @@
-import { Enum, u32, Map, BTreeSet, BTreeMap } from 'https://deno.land/x/polkadot@0.2.16/types/mod.ts';
-import { Hash } from 'https://deno.land/x/polkadot@0.2.16/types/interfaces/index.ts';
+import { Enum, u32, Map, BTreeSet, BTreeMap } from 'https://deno.land/x/polkadot@0.2.17/types/mod.ts';
+import { Hash } from 'https://deno.land/x/polkadot@0.2.17/types/interfaces/index.ts';
 
 import { MessageId, ProgramId } from '../ids/index.ts';
 import { GasReservationSlot } from '../gas.ts';

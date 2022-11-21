@@ -1,4 +1,4 @@
-import { GenericEventData, GenericEvent } from 'https://deno.land/x/polkadot@0.2.16/types/mod.ts';
+import { GenericEventData, GenericEvent } from 'https://deno.land/x/polkadot@0.2.17/types/mod.ts';
 import {
   CodeChangedData,
   DebugData,

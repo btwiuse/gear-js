@@ -1,5 +1,5 @@
-import { blake2AsHex, blake2AsU8a } from 'https://deno.land/x/polkadot@0.2.16/util-crypto/mod.ts';
-import { u8aToU8a } from 'https://deno.land/x/polkadot@0.2.16/util/mod.ts';
+import { blake2AsHex, blake2AsU8a } from 'https://deno.land/x/polkadot@0.2.17/util-crypto/mod.ts';
+import { u8aToU8a } from 'https://deno.land/x/polkadot@0.2.17/util/mod.ts';
 
 import { Hex } from '../types/index.ts';
 import { CreateType } from '../create-type/CreateType.ts';

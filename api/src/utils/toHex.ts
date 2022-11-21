@@ -1,4 +1,4 @@
-import { u8aToHex } from "https://deno.land/x/polkadot@0.2.16/util/index.ts";
+import { u8aToHex } from "https://deno.land/x/polkadot@0.2.17/util/index.ts";
 
 const encoder = new TextEncoder();
 
