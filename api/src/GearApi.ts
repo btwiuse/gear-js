@@ -1,3 +1,4 @@
+import { objectSpread } from 'https://deno.land/x/polkadot@0.2.45/util/index.ts';
 import { ApiPromise, WsProvider } from 'https://deno.land/x/polkadot@0.2.45/api/index.ts';
 import { DispatchError, Event } from 'https://deno.land/x/polkadot@0.2.45/types/interfaces/index.ts';
 import { u128, u64 } from 'https://deno.land/x/polkadot@0.2.45/types/index.ts';
@@ -187,5 +188,11 @@ export class GearApi extends ApiPromise {
       method: 'Unknown error',
       name: 'Unknown error',
     };
+  }
+
+  public clone (): GearApi {
+    return new GearApi(
+      objectSpread({}, this._options, { source: this })
+    );
   }
 }
