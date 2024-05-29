@@ -1,8 +1,8 @@
-import { Struct, Vec, u128, u8 } from '@polkadot/types-codec';
-import { AnyNumber } from '@polkadot/types-codec/types';
-import { HexString } from '@polkadot/util/types';
+import { Struct, Vec, u128, u8 } from 'https://deno.land/x/polkadot@0.2.45/types-codec/index.ts';
+import { AnyNumber } from 'https://deno.land/x/polkadot@0.2.45/types-codec/types/index.ts';
+import { HexString } from 'https://deno.land/x/polkadot@0.2.45/util/types.ts';
 
-import { GearCoreErrorsSimpleReplyCode } from '../../lookup';
+import { GearCoreErrorsSimpleReplyCode } from '../../lookup.ts';
 
 export interface ICalculateReplyForHandleOptions {
   /** Origin of the message */

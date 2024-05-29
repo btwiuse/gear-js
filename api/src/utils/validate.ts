@@ -1,11 +1,11 @@
-import { BN, u8aToBigInt } from '@polkadot/util';
-import { u128, u64 } from '@polkadot/types';
-import { GearCoreMessageUserUserStoredMessage } from '../types';
-import { HexString } from '@polkadot/util/types';
+import { BN, u8aToBigInt } from 'https://deno.land/x/polkadot@0.2.45/util/index.ts';
+import { u128, u64 } from 'https://deno.land/x/polkadot@0.2.45/types/index.ts';
+import { GearCoreMessageUserUserStoredMessage } from '../types/index.ts';
+import { HexString } from 'https://deno.land/x/polkadot@0.2.45/util/types.ts';
 
-import { GasLimit, Value } from '../types/common';
-import { GearApi } from '../GearApi';
-import { ValidationError } from '../errors';
+import { GasLimit, Value } from '../types/index.ts';
+import { GearApi } from '../GearApi.ts';
+import { ValidationError } from '../errors/index.ts';
 
 export function validateValue(value: Value | undefined, api: GearApi) {
   if (!value) return;

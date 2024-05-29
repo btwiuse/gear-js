@@ -1,9 +1,9 @@
-import { ISubmittableResult } from '@polkadot/types/types';
-import { SubmittableExtrinsic } from '@polkadot/api/types';
+import { ISubmittableResult } from 'https://deno.land/x/polkadot@0.2.45/types/types/index.ts';
+import { SubmittableExtrinsic } from 'https://deno.land/x/polkadot@0.2.45/api/types/index.ts';
 
-import { V1000MessageSendOptions, V1000MessageSendReplyOptions } from '../../types';
-import { GearMessage } from '../../Message';
-import { ProgramMetadata } from '../../metadata';
+import { V1000MessageSendOptions, V1000MessageSendReplyOptions } from '../../types/index.ts';
+import { GearMessage } from '../../Message.ts';
+import { ProgramMetadata } from '../../metadata/index.ts';
 
 export declare class V1000Message extends GearMessage {
   send(

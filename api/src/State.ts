@@ -1,10 +1,10 @@
-import { Codec } from '@polkadot/types/types';
+import { Codec } from 'https://deno.land/x/polkadot@0.2.45/types/types/index.ts';
 
-import { CreateType, MetadataVersion, ProgramMetadata, StateMetadata } from './metadata';
-import { HumanTypesRepr, ReadStateBatchParams, ReadStateParams, ReadStateUsingWasmParams } from './types';
-import { Bytes } from '@polkadot/types';
-import { GearProgramStorage } from './Storage';
-import { encodePayload } from './utils';
+import { CreateType, MetadataVersion, ProgramMetadata, StateMetadata } from './metadata/index.ts';
+import { HumanTypesRepr, ReadStateBatchParams, ReadStateParams, ReadStateUsingWasmParams } from './types/index.ts';
+import { Bytes } from 'https://deno.land/x/polkadot@0.2.45/types/index.ts';
+import { GearProgramStorage } from './Storage.ts';
+import { encodePayload } from './utils/index.ts';
 
 export class GearProgramState extends GearProgramStorage {
   /**

@@ -1,8 +1,8 @@
-import { Bytes } from '@polkadot/types-codec';
-import { HexString } from '@polkadot/util/types';
+import { Bytes } from 'https://deno.land/x/polkadot@0.2.45/types-codec/index.ts';
+import { HexString } from 'https://deno.land/x/polkadot@0.2.45/util/types.ts';
 
-import { PayloadType } from '../../payload';
-import { ProgramMetadata } from '../../../metadata';
+import { PayloadType } from '../../payload.ts';
+import { ProgramMetadata } from '../../../metadata/index.ts';
 
 export interface ReadStateParams {
   /**

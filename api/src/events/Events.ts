@@ -1,12 +1,12 @@
-import { FrameSystemAccountInfo, FrameSystemEventRecord } from '@polkadot/types/lookup';
-import { HexString } from '@polkadot/util/types';
-import { UnsubscribePromise } from '@polkadot/api/types';
+import { FrameSystemAccountInfo, FrameSystemEventRecord } from 'https://deno.land/x/polkadot@0.2.45/types/lookup.ts';
+import { HexString } from 'https://deno.land/x/polkadot@0.2.45/util/types.ts';
+import { UnsubscribePromise } from 'https://deno.land/x/polkadot@0.2.45/api/types/index.ts';
 
-import { IBalanceCallback, IBlocksCallback } from '../types';
-import { IGearEvent, IGearVoucherEvent } from './types';
-import { Transfer, UserMessageSent } from './GearEvents';
-import { GearApi } from '../GearApi';
-import { Vec } from '@polkadot/types-codec';
+import { IBalanceCallback, IBlocksCallback } from '../types/index.ts';
+import { IGearEvent, IGearVoucherEvent } from './types.ts';
+import { Transfer, UserMessageSent } from './GearEvents.ts';
+import { GearApi } from '../GearApi.ts';
+import { Vec } from 'https://deno.land/x/polkadot@0.2.45/types-codec/index.ts';
 
 export class GearEvents {
   private api: GearApi;

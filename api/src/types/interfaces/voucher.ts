@@ -1,7 +1,7 @@
-import { BalanceOf } from '@polkadot/types/interfaces';
-import { HexString } from '@polkadot/util/types';
-import { ISubmittableResult } from '@polkadot/types/types';
-import { SubmittableExtrinsic } from '@polkadot/api/types';
+import { BalanceOf } from 'https://deno.land/x/polkadot@0.2.45/types/interfaces/index.ts';
+import { HexString } from 'https://deno.land/x/polkadot@0.2.45/util/types.ts';
+import { ISubmittableResult } from 'https://deno.land/x/polkadot@0.2.45/types/types/index.ts';
+import { SubmittableExtrinsic } from 'https://deno.land/x/polkadot@0.2.45/api/types/index.ts';
 
 export type ICallOptions =
   | { SendMessage: SubmittableExtrinsic<'promise', ISubmittableResult> }

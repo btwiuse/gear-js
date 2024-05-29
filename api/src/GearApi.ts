@@ -1,21 +1,21 @@
-import { ApiPromise, WsProvider } from '@polkadot/api';
-import { DispatchError, Event } from '@polkadot/types/interfaces';
-import { u128, u64 } from '@polkadot/types';
+import { ApiPromise, WsProvider } from 'https://deno.land/x/polkadot@0.2.45/api/index.ts';
+import { DispatchError, Event } from 'https://deno.land/x/polkadot@0.2.45/types/interfaces/index.ts';
+import { u128, u64 } from 'https://deno.land/x/polkadot@0.2.45/types/index.ts';
 
-import { ExtrinsicFailedData, GearApiOptions, GearCommonGasMultiplier, InflationInfo } from './types';
-import { gearRpc, gearTypes } from './default';
-import { GearBalance } from './Balance';
-import { GearBlock } from './Blocks';
-import { GearClaimValue } from './Claim';
-import { GearCode } from './Code';
-import { GearEvents } from './events';
-import { GearMailbox } from './Mailbox';
-import { GearMessage } from './Message';
-import { GearProgram } from './Program';
-import { GearProgramState } from './State';
-import { GearProgramStorage } from './Storage';
-import { GearVoucher } from './Voucher';
-import { GearWaitlist } from './Waitlist';
+import { ExtrinsicFailedData, GearApiOptions, GearCommonGasMultiplier, InflationInfo } from './types/index.ts';
+import { gearRpc, gearTypes } from './default/index.ts';
+import { GearBalance } from './Balance.ts';
+import { GearBlock } from './Blocks.ts';
+import { GearClaimValue } from './Claim.ts';
+import { GearCode } from './Code.ts';
+import { GearEvents } from './events/index.ts';
+import { GearMailbox } from './Mailbox.ts';
+import { GearMessage } from './Message.ts';
+import { GearProgram } from './Program.ts';
+import { GearProgramState } from './State.ts';
+import { GearProgramStorage } from './Storage.ts';
+import { GearVoucher } from './Voucher.ts';
+import { GearWaitlist } from './Waitlist.ts';
 
 export class GearApi extends ApiPromise {
   public program: GearProgram;

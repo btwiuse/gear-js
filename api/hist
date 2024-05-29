@@ -1,0 +1,13 @@
+gensed(){
+  git grep " from '" | grep ^src/ | grep @polkadot | nl | less | grep -o "'.*'" | sort -u | xargs -L1 | sed 's,@polkadot/,@polkadot ,g' | while read a b; do echo "s,'$a/$b','https://deno.land/x/polkadot@0.2.45/$b/index.ts',g"; done
+  git grep " from '" | grep ^src/ | grep -v @polkadot | nl | less | grep -o "'.*'" | sort -u | xargs -L1 | grep -E '^\.' | grep -vE '\.json$'| while read a; do echo "s,'$a','$a.ts',g"; done
+  git grep " from '" | grep ^src/ | grep -v @polkadot | nl | less | grep -o "'.*'" | sort -u | xargs -L1 | grep -vE '^\.' | while read a; do echo "s,'$a','https://deno.land/x/$a/index.ts',g"; done
+}
+
+gensed > /tmp/sed
+
+filelist(){
+  git grep " from '" | grep ^src/ | cut -d : -f 1 | sort -u
+}
+
+filelist | xargs -L1 sed -f /tmp/sed -i

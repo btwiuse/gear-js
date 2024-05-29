@@ -1,11 +1,11 @@
-import { Codec, Registry } from '@polkadot/types/types';
-import { PortableRegistry, TypeRegistry } from '@polkadot/types';
-import { Si1LookupTypeId, Si1TypeDef } from '@polkadot/types/interfaces';
-import { HexString } from '@polkadot/util/types';
-import assert from 'assert';
-import { hexToU8a } from '@polkadot/util';
+import { Codec, Registry } from 'https://deno.land/x/polkadot@0.2.45/types/types/index.ts';
+import { PortableRegistry, TypeRegistry } from 'https://deno.land/x/polkadot@0.2.45/types/index.ts';
+import { Si1LookupTypeId, Si1TypeDef } from 'https://deno.land/x/polkadot@0.2.45/types/interfaces/index.ts';
+import { HexString } from 'https://deno.land/x/polkadot@0.2.45/util/types.ts';
+import assert from 'node:assert';
+import { hexToU8a } from 'https://deno.land/x/polkadot@0.2.45/util/index.ts';
 
-import { TypeStructure } from '../types';
+import { TypeStructure } from '../types/index.ts';
 
 const LOOKUP_REGEXP = /\bLookup\d+\b/g;
 const DIGITS_REGEXP = /\d+/;

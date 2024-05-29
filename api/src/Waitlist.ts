@@ -1,8 +1,8 @@
-import { HexString } from '@polkadot/util/types';
-import { Option } from '@polkadot/types';
+import { HexString } from 'https://deno.land/x/polkadot@0.2.45/util/types.ts';
+import { Option } from 'https://deno.land/x/polkadot@0.2.45/types/index.ts';
 
-import { GearApi } from './GearApi';
-import { WaitlistItem } from 'types';
+import { GearApi } from './GearApi.ts';
+import { WaitlistItem } from './types/index.ts';
 
 export class GearWaitlist {
   constructor(private _api: GearApi) {}

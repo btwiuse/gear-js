@@ -1,3 +1,3 @@
-export * from './common';
-export * from './extrinsic';
-export * from './reply';
+export * from './common.ts';
+export * from './extrinsic.ts';
+export * from './reply.ts';

@@ -1,1 +1,3 @@
-export const SEPARATOR = Buffer.from('::').toString('hex');
+import { toHex } from './toHex.ts';
+
+export const SEPARATOR = toHex('::');

@@ -1,7 +1,7 @@
-import { HumanStateMetadataRepr, StateFunctions, StateMetadataRepr } from '../types';
-import { CreateType } from './create-type';
-import { GearMetadata } from './metadata';
-import importObj from '../wasm/importObj';
+import { HumanStateMetadataRepr, StateFunctions, StateMetadataRepr } from '../types/index.ts';
+import { CreateType } from './create-type.ts';
+import { GearMetadata } from './metadata.ts';
+import importObj from '../wasm/importObj.ts';
 
 export class StateMetadata extends GearMetadata {
   functions: StateFunctions;

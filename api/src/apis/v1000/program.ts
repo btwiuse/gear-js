@@ -4,9 +4,9 @@ import {
   IProgramUploadResult,
   V1000ProgramCreateOptions,
   V1000ProgramUploadOptions,
-} from '../../types';
-import { GearProgram } from '../../Program';
-import { ProgramMetadata } from '../../metadata';
+} from '../../types/index.ts';
+import { GearProgram } from '../../Program.ts';
+import { ProgramMetadata } from '../../metadata/index.ts';
 
 export declare class V1000Program extends GearProgram {
   upload(args: V1000ProgramUploadOptions, meta?: ProgramMetadata, typeIndex?: number): IProgramUploadResult;

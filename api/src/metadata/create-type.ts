@@ -1,10 +1,10 @@
-import { Codec, Registry } from '@polkadot/types/types';
-import { HexString } from '@polkadot/util/types';
-import { TypeRegistry } from '@polkadot/types';
+import { Codec, Registry } from 'https://deno.land/x/polkadot@0.2.45/types/types/index.ts';
+import { HexString } from 'https://deno.land/x/polkadot@0.2.45/util/types.ts';
+import { TypeRegistry } from 'https://deno.land/x/polkadot@0.2.45/types/index.ts';
 
-import { isJSON, toJSON } from '../utils/json';
-import { GearMetadata } from './metadata';
-import { gearTypes } from '../default';
+import { isJSON, toJSON } from '../utils/json.ts';
+import { GearMetadata } from './metadata.ts';
+import { gearTypes } from '../default/index.ts';
 
 export class CreateType {
   public registry: Registry;

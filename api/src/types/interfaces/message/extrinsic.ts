@@ -1,7 +1,7 @@
-import { HexString } from '@polkadot/util/types';
+import { HexString } from 'https://deno.land/x/polkadot@0.2.45/util/types.ts';
 
-import { GasLimit, Value } from '../../common';
-import { PayloadType } from '../../payload';
+import { GasLimit, Value } from '../../common.ts';
+import { PayloadType } from '../../payload.ts';
 
 export interface V1010MessageSendOptions {
   /**

@@ -1,6 +1,6 @@
-import { TypeRegistry, u64 } from '@polkadot/types';
-import { BlockNumber } from '@polkadot/types/interfaces';
-import assert from 'assert';
+import { TypeRegistry, u64 } from 'https://deno.land/x/polkadot@0.2.45/types/index.ts';
+import { BlockNumber } from 'https://deno.land/x/polkadot@0.2.45/types/interfaces/index.ts';
+import assert from 'node:assert';
 
 export default (
   memory: WebAssembly.Memory,
