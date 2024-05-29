@@ -1,12 +1,12 @@
-import { ISubmittableResult } from '@polkadot/types/types';
-import { SubmittableExtrinsic } from '@polkadot/api/types';
-import { u8aToHex } from '@polkadot/util';
+import { ISubmittableResult } from 'https://deno.land/x/polkadot@0.2.45/types/types/index.ts';
+import { SubmittableExtrinsic } from 'https://deno.land/x/polkadot@0.2.45/api/types/index.ts';
+import { u8aToHex } from 'https://deno.land/x/polkadot@0.2.45/util/index.ts';
 
-import { IResumeSessionCommitArgs, IResumeSessionInitArgs, IResumeSessionPushArgs } from './types';
-import { ResumeSessionCommitError, ResumeSessionInitError, ResumeSessionPushError } from './errors';
-import { CreateType } from './metadata';
-import { GearApi } from './GearApi';
-import { GearTransaction } from './Transaction';
+import { IResumeSessionCommitArgs, IResumeSessionInitArgs, IResumeSessionPushArgs } from './types/index.ts';
+import { ResumeSessionCommitError, ResumeSessionInitError, ResumeSessionPushError } from './errors/index.ts';
+import { CreateType } from './metadata/index.ts';
+import { GearApi } from './GearApi.ts';
+import { GearTransaction } from './Transaction.ts';
 
 const SIXTEEN_KB = 0x4000;
 

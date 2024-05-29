@@ -1,9 +1,9 @@
-import { Option, u128, u32 } from '@polkadot/types';
-import { H256 } from '@polkadot/types/interfaces';
-import { HexString } from '@polkadot/util/types';
-import { ISubmittableResult } from '@polkadot/types/types';
-import { SubmittableExtrinsic } from '@polkadot/api/types';
-import { randomAsHex } from '@polkadot/util-crypto';
+import { Option, u128, u32 } from 'https://deno.land/x/polkadot@0.2.45/types/index.ts';
+import { H256 } from 'https://deno.land/x/polkadot@0.2.45/types/interfaces/index.ts';
+import { HexString } from 'https://deno.land/x/polkadot@0.2.45/util/types.ts';
+import { ISubmittableResult } from 'https://deno.land/x/polkadot@0.2.45/types/types/index.ts';
+import { SubmittableExtrinsic } from 'https://deno.land/x/polkadot@0.2.45/api/types/index.ts';
+import { randomAsHex } from 'https://deno.land/x/polkadot@0.2.45/util-crypto/index.ts';
 
 import {
   GearCoreProgram,
@@ -11,8 +11,7 @@ import {
   IProgramUploadResult,
   ProgramCreateOptions,
   ProgramUploadOptions,
-} from './types';
-import { ProgramDoesNotExistError, ProgramHasNoMetahash, SubmitProgramError } from './errors';
+} from './types/index.ts';
 import {
   encodePayload,
   generateCodeHash,
@@ -22,11 +21,11 @@ import {
   validateGasLimit,
   validateProgramId,
   validateValue,
-} from './utils';
-import { GearApi } from './GearApi';
-import { GearGas } from './Gas';
-import { GearTransaction } from './Transaction';
-import { ProgramMetadata } from './metadata';
+} from './utils/index.ts';
+import { GearApi } from './GearApi.ts';
+import { GearGas } from './Gas.ts';
+import { GearTransaction } from './Transaction.ts';
+import { ProgramMetadata } from './metadata/index.ts';
 
 export class GearProgram extends GearTransaction {
   public calculateGas: GearGas;

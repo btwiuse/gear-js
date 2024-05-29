@@ -1,11 +1,11 @@
-import { HexString } from '@polkadot/util/types';
+import { HexString } from 'https://deno.land/x/polkadot@0.2.45/util/types.ts';
 
-import { GasInfo, PayloadType } from './types';
-import { GearApi } from './GearApi';
-import { ProgramMetadata } from './metadata';
-import { SPEC_VERSION } from './consts';
-import { Value } from './types/common';
-import { encodePayload } from './utils/create-payload';
+import { GasInfo, PayloadType } from './types/index.ts';
+import { GearApi } from './GearApi.ts';
+import { ProgramMetadata } from './metadata/index.ts';
+import { SPEC_VERSION } from './consts.ts';
+import { Value } from './types/common.ts';
+import { encodePayload } from './utils/create-payload.ts';
 
 export class GearGas {
   constructor(private _api: GearApi) {}

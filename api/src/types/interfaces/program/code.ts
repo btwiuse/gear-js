@@ -1,7 +1,7 @@
-import { ISubmittableResult } from '@polkadot/types/types';
-import { SubmittableExtrinsic } from '@polkadot/api/types';
+import { ISubmittableResult } from 'https://deno.land/x/polkadot@0.2.45/types/types/index.ts';
+import { SubmittableExtrinsic } from 'https://deno.land/x/polkadot@0.2.45/api/types/index.ts';
 
-import { HexString } from '../../index';
+import { HexString } from '../../index.ts';
 
 export interface CodeUploadResult {
   /**

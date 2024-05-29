@@ -1,5 +1,5 @@
-import { u16, u8 } from '@polkadot/types';
-import { hexToU8a } from '@polkadot/util';
+import { u16, u8 } from 'https://deno.land/x/polkadot@0.2.45/types/index.ts';
+import { hexToU8a } from 'https://deno.land/x/polkadot@0.2.45/util/index.ts';
 
 import {
   HumanProgramMetadataReprRustV1,
@@ -7,9 +7,9 @@ import {
   ProgramMetadataRepr,
   ProgramMetadataReprRustV1,
   ProgramMetadataReprRustV2,
-} from '../types';
-import { CreateType } from './create-type';
-import { GearMetadata } from './metadata';
+} from '../types/index.ts';
+import { CreateType } from './create-type.ts';
+import { GearMetadata } from './metadata.ts';
 
 export enum Lang {
   RUST = 0,

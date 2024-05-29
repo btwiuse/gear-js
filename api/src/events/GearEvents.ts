@@ -1,4 +1,4 @@
-import { GenericEvent, GenericEventData } from '@polkadot/types';
+import { GenericEvent, GenericEventData } from 'https://deno.land/x/polkadot@0.2.45/types/index.ts';
 
 import {
   CodeChangedData,
@@ -15,7 +15,7 @@ import {
   VoucherIssuedData,
   VoucherRevokedData,
   VoucherUpdatedData,
-} from './GearEventData';
+} from './GearEventData.ts';
 
 export interface GearEvent<D extends GenericEventData> extends GenericEvent {
   data: D;

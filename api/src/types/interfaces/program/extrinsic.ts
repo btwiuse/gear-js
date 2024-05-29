@@ -1,11 +1,11 @@
-import { BTreeSet, u32 } from '@polkadot/types';
-import { AnyJson } from '@polkadot/types/types';
-import { HexString } from '@polkadot/util/types';
-import { ISubmittableResult } from '@polkadot/types/types';
-import { SubmittableExtrinsic } from '@polkadot/api/types';
+import { BTreeSet, u32 } from 'https://deno.land/x/polkadot@0.2.45/types/index.ts';
+import { AnyJson } from 'https://deno.land/x/polkadot@0.2.45/types/types/index.ts';
+import { HexString } from 'https://deno.land/x/polkadot@0.2.45/util/types.ts';
+import { ISubmittableResult } from 'https://deno.land/x/polkadot@0.2.45/types/types/index.ts';
+import { SubmittableExtrinsic } from 'https://deno.land/x/polkadot@0.2.45/api/types/index.ts';
 
-import { GasLimit, Value } from '../../common';
-import { PayloadType } from 'types/payload';
+import { GasLimit, Value } from '../../common.ts';
+import { PayloadType } from '../../payload.ts';
 
 export interface V1010ProgramUploadOptions {
   code: HexString | Buffer | Uint8Array;

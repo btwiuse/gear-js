@@ -12,7 +12,7 @@ import {
   VoucherIssued,
   VoucherRevoked,
   VoucherUpdated,
-} from './GearEvents';
+} from './GearEvents.ts';
 
 export interface IGearVoucherEvent {
   VoucherIssued: VoucherIssued;

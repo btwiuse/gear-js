@@ -1,13 +1,13 @@
-import { Option, Vec } from '@polkadot/types';
-import { BalanceOf } from '@polkadot/types/interfaces';
-import { HexString } from '@polkadot/util/types';
-import { ISubmittableResult } from '@polkadot/types/types';
-import { SubmittableExtrinsic } from '@polkadot/api/types';
-import { blake2AsHex } from '@polkadot/util-crypto';
+import { Option, Vec } from 'https://deno.land/x/polkadot@0.2.45/types/index.ts';
+import { BalanceOf } from 'https://deno.land/x/polkadot@0.2.45/types/interfaces/index.ts';
+import { HexString } from 'https://deno.land/x/polkadot@0.2.45/util/types.ts';
+import { ISubmittableResult } from 'https://deno.land/x/polkadot@0.2.45/types/types/index.ts';
+import { SubmittableExtrinsic } from 'https://deno.land/x/polkadot@0.2.45/api/types/index.ts';
+import { blake2AsHex } from 'https://deno.land/x/polkadot@0.2.45/util-crypto/index.ts';
 
-import { ICallOptions, IUpdateVoucherParams, IVoucherDetails, PalletGearVoucherInternalVoucherInfo } from './types';
-import { GearTransaction } from './Transaction';
-import { generateVoucherId } from './utils';
+import { ICallOptions, IUpdateVoucherParams, IVoucherDetails, PalletGearVoucherInternalVoucherInfo } from './types/index.ts';
+import { GearTransaction } from './Transaction.ts';
+import { generateVoucherId } from './utils/index.ts';
 
 export class GearVoucher extends GearTransaction {
   /**

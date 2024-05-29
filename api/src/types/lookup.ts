@@ -1,6 +1,6 @@
-import '@polkadot/types/lookup';
+import 'https://deno.land/x/polkadot@0.2.45/types/lookup.ts';
 
-import type { AccountId32, H256, MultiAddress, Percent } from '@polkadot/types/interfaces/runtime';
+import type { AccountId32, H256, MultiAddress, Percent } from 'https://deno.land/x/polkadot@0.2.45/types/interfaces/runtime/index.ts';
 import type {
   BTreeMap,
   BTreeSet,
@@ -20,7 +20,8 @@ import type {
 } from '@polkadot/types-codec';
 import type { ITuple } from '@polkadot/types-codec/types';
 import { SpWeightsWeightV2Weight } from '@polkadot/types/lookup';
-/** @name PalletGearCall (262) */
+
+/** @name PalletGearCall (265) */
 export interface PalletGearCall extends Enum {
   readonly isUploadCode: boolean;
   readonly asUploadCode: {

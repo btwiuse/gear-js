@@ -1,13 +1,13 @@
-import '@polkadot/api-base/types/consts';
+import 'https://deno.land/x/polkadot@0.2.45/api-base/types/consts.ts';
 
-import { GearCommonGasMultiplier, PalletGearSchedule } from '../lookup';
-import type { Option, bool, u128, u32, u64, u8 } from '@polkadot/types-codec';
-import type { AccountId32 } from '@polkadot/types/interfaces/runtime';
-import type { ApiTypes } from '@polkadot/api-base/types';
-import type { Codec } from '@polkadot/types-codec/types';
-import { FrameSupportPalletId } from '@polkadot/types/lookup';
+import { GearCommonGasMultiplier, PalletGearSchedule } from '../lookup.ts';
+import type { Option, bool, u128, u32, u64 } from 'https://deno.land/x/polkadot@0.2.45/types-codec/index.ts';
+import type { AccountId32 } from 'https://deno.land/x/polkadot@0.2.45/types/interfaces/runtime/index.ts';
+import type { ApiTypes } from 'https://deno.land/x/polkadot@0.2.45/api-base/types/index.ts';
+import type { Codec } from 'https://deno.land/x/polkadot@0.2.45/types-codec/types/index.ts';
+import { FrameSupportPalletId } from 'https://deno.land/x/polkadot@0.2.45/types/lookup.ts';
 
-declare module '@polkadot/api-base/types/consts' {
+declare module 'https://deno.land/x/polkadot@0.2.45/api-base/types/consts.ts' {
   interface AugmentedConsts<ApiType extends ApiTypes> {
     gear: {
       /**

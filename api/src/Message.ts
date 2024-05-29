@@ -1,11 +1,11 @@
-import { SubmittableExtrinsic, UnsubscribePromise, VoidFn } from '@polkadot/api/types';
-import { HexString } from '@polkadot/util/types';
-import { ISubmittableResult } from '@polkadot/types/types';
-import { ReplaySubject } from 'rxjs';
+import { SubmittableExtrinsic, UnsubscribePromise, VoidFn } from 'https://deno.land/x/polkadot@0.2.45/api/types/index.ts';
+import { HexString } from 'https://deno.land/x/polkadot@0.2.45/util/types.ts';
+import { ISubmittableResult } from 'https://deno.land/x/polkadot@0.2.45/types/types/index.ts';
+import { ReplaySubject } from 'https://deno.land/x/rxjs/mod.ts';
 
-import { ICalculateReplyForHandleOptions, MessageSendOptions, MessageSendReplyOptions, ReplyInfo } from './types';
-import { SendMessageError, SendReplyError } from './errors';
-import { UserMessageSent, UserMessageSentData } from './events';
+import { ICalculateReplyForHandleOptions, MessageSendOptions, MessageSendReplyOptions, ReplyInfo } from './types/index.ts';
+import { SendMessageError, SendReplyError } from './errors/index.ts';
+import { UserMessageSent, UserMessageSentData } from './events/index.ts';
 import {
   decodeAddress,
   encodePayload,
@@ -13,9 +13,9 @@ import {
   validateGasLimit,
   validateMailboxItem,
   validateValue,
-} from './utils';
-import { GearTransaction } from './Transaction';
-import { ProgramMetadata } from './metadata';
+} from './utils/index.ts';
+import { GearTransaction } from './Transaction.ts';
+import { ProgramMetadata } from './metadata/index.ts';
 
 export class GearMessage extends GearTransaction {
   /**

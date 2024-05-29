@@ -1,6 +1,6 @@
-export { HexString } from '@polkadot/util/types';
+import { HexString } from 'https://deno.land/x/polkadot@0.2.45/util/types.ts';
 
-export * from './common';
-export * from './payload';
-export * from './interfaces';
-export * from './lookup';
+export * from './common.ts';
+export * from './payload.ts';
+export * from './interfaces/index.ts';
+export * from './lookup.ts';

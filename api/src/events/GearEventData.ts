@@ -1,6 +1,5 @@
-import { AccountId32, BlockNumber } from '@polkadot/types/interfaces';
-import { BTreeMap, BTreeSet, GenericEventData, Option, u128, u32 } from '@polkadot/types';
-
+import { AccountId32, BlockNumber } from 'https://deno.land/x/polkadot@0.2.45/types/interfaces/index.ts';
+import { BTreeMap, BTreeSet, GenericEventData, Option, u128, u32 } from 'https://deno.land/x/polkadot@0.2.45/types/index.ts';
 import {
   CodeId,
   GasNodeId,
@@ -17,7 +16,7 @@ import {
   ProgramId,
   ReservationId,
   ResumeProgramSessionId,
-} from '../types';
+} from '../types/index.ts';
 
 export class GearEventData extends GenericEventData {
   constructor(data: GenericEventData) {

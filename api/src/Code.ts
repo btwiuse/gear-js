@@ -1,12 +1,12 @@
-import { Bytes, Option } from '@polkadot/types';
-import { HexString } from '@polkadot/util/types';
-import { u8aToHex } from '@polkadot/util';
+import { Bytes, Option } from 'https://deno.land/x/polkadot@0.2.45/types/index.ts';
+import { HexString } from 'https://deno.land/x/polkadot@0.2.45/util/types.ts';
+import { u8aToHex } from 'https://deno.land/x/polkadot@0.2.45/util/index.ts';
 
-import { CodeUploadResult, GearCommonCodeMetadata, GearCoreCodeInstrumentedInstrumentedCode } from './types';
-import { generateCodeHash, getIdsFromKeys, validateCodeId } from './utils';
-import { CodeDoesNotExistError } from './errors';
-import { GearTransaction } from './Transaction';
-import { getGrReply } from './wasm';
+import { CodeUploadResult, GearCommonCodeMetadata, GearCoreCodeInstrumentedInstrumentedCode } from './types/index.ts';
+import { generateCodeHash, getIdsFromKeys, validateCodeId } from './utils/index.ts';
+import { CodeDoesNotExistError } from './errors/index.ts';
+import { GearTransaction } from './Transaction.ts';
+import { getGrReply } from './wasm/index.ts';
 
 export class GearCode extends GearTransaction {
   /**

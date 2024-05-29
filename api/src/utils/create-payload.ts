@@ -1,9 +1,9 @@
-import { hexToU8a, isHex, isU8a } from '@polkadot/util';
-import { Codec } from '@polkadot/types/types';
-import { HexString } from '@polkadot/util/types';
+import { hexToU8a, isHex, isU8a } from 'https://deno.land/x/polkadot@0.2.45/util/index.ts';
+import { Codec } from 'https://deno.land/x/polkadot@0.2.45/types/types/index.ts';
+import { HexString } from 'https://deno.land/x/polkadot@0.2.45/util/types.ts';
 
-import { GearMetadata, ProgramMetadata, isProgramMeta } from '../metadata';
-import { CreateType } from '../metadata';
+import { GearMetadata, ProgramMetadata, isProgramMeta } from '../metadata/index.ts';
+import { CreateType } from '../metadata/index.ts';
 
 export function getRegistry(metaOrHexRegistry: HexString): HexString {
   if (!metaOrHexRegistry) {

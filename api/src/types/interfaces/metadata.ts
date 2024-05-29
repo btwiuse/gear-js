@@ -1,5 +1,5 @@
-import { BTreeMap, Option, Struct, Text, Vec, u32, u8 } from '@polkadot/types';
-import { HexString } from '@polkadot/util/types';
+import { BTreeMap, Option, Struct, Text, Vec, u32, u8 } from 'https://deno.land/x/polkadot@0.2.45/types/index.ts';
+import { HexString } from 'https://deno.land/x/polkadot@0.2.45/util/types.ts';
 
 export interface TypesRepr extends Struct {
   input: Option<u32>;

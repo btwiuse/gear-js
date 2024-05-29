@@ -1,5 +1,5 @@
-import { ProgramMetadata } from './programMetadata';
-import { StateMetadata } from './stateMetadata';
+import { ProgramMetadata } from './programMetadata.ts';
+import { StateMetadata } from './stateMetadata.ts';
 
 export function isProgramMeta(arg: unknown): arg is ProgramMetadata {
   if (typeof arg !== 'object') {

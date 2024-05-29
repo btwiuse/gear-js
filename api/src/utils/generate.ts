@@ -1,9 +1,9 @@
-import { HexString, U8aLike } from '@polkadot/util/types';
-import { blake2AsHex, blake2AsU8a } from '@polkadot/util-crypto';
-import { stringToU8a, u8aToU8a } from '@polkadot/util';
+import { HexString, U8aLike } from 'https://deno.land/x/polkadot@0.2.45/util/types.ts';
+import { blake2AsHex, blake2AsU8a } from 'https://deno.land/x/polkadot@0.2.45/util-crypto/index.ts';
+import { stringToU8a, u8aToU8a } from 'https://deno.land/x/polkadot@0.2.45/util/index.ts';
 
-import { CreateType } from '../metadata';
-import { GearApi } from 'GearApi';
+import { CreateType } from '../metadata/index.ts';
+import { GearApi } from '../GearApi.ts';
 
 const VOUCHER_PREFIX_BEFORE_1100 = stringToU8a('modlpy/voucher__');
 const VOUCHER_PREFIX = stringToU8a('voucher');

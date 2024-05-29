@@ -1,17 +1,18 @@
-import { Bytes, Option, u32 } from '@polkadot/types';
-import { u8aToNumber, u8aToU8a } from '@polkadot/util';
-import { H256 } from '@polkadot/types/interfaces';
-import { HexString } from '@polkadot/util/types';
-import { ITuple } from '@polkadot/types-codec/types';
+import { Bytes, Option, u32 } from 'https://deno.land/x/polkadot@0.2.45/types/index.ts';
+import { u8aToNumber, u8aToU8a } from 'https://deno.land/x/polkadot@0.2.45/util/index.ts';
+import { H256 } from 'https://deno.land/x/polkadot@0.2.45/types/interfaces/index.ts';
+import { HexString } from 'https://deno.land/x/polkadot@0.2.45/util/types.ts';
+import { ITuple } from 'https://deno.land/x/polkadot@0.2.45/types-codec/types/index.ts';
+import { u8aToU8a } from 'https://deno.land/x/polkadot@0.2.45/util/index.ts';
 
-import { GearCoreProgram, GearCoreProgramActiveProgram, IGearPages, PausedProgramBlockAndHash } from './types';
+import { GearCoreProgram, GearCoreProgramActiveProgram, IGearPages, PausedProgramBlockAndHash } from './types/index.ts';
 import {
   PausedProgramDoesNotExistError,
   ProgramDoesNotExistError,
   ProgramExitedError,
   ProgramTerminatedError,
-} from './errors';
-import { GearApi } from './GearApi';
+} from './errors/index.ts';
+import { GearApi } from './GearApi.ts';
 
 export class GearProgramStorage {
   constructor(protected _api: GearApi) {}
