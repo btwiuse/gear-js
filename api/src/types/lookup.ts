@@ -17,9 +17,9 @@ import type {
   u16,
   u32,
   u64,
-} from '@polkadot/types-codec';
-import type { ITuple } from '@polkadot/types-codec/types';
-import { SpWeightsWeightV2Weight } from '@polkadot/types/lookup';
+} from 'https://deno.land/x/polkadot@0.2.45/types-codec/index.ts';
+import type { ITuple } from 'https://deno.land/x/polkadot@0.2.45/types-codec/types/index.ts';
+import { SpWeightsWeightV2Weight } from 'https://deno.land/x/polkadot@0.2.45/types/lookup.ts';
 
 /** @name PalletGearCall (265) */
 export interface PalletGearCall extends Enum {
